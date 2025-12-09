@@ -263,7 +263,7 @@ o cursor passa por cima */
     flex-wrap: wrap;
     gap: 90px; /* espacamento entre os itens*/
     padding: 20px; /* espaco ao redor do item dentro*/
-    margin-top: 300px; /**/
+    margin: 115px 0;
     justify-content: center;/* alinhar itens*/
 }
 
@@ -308,6 +308,7 @@ o cursor passa por cima */
 .recursos2 div:hover {
     transform: scale(1.2);
 }
+
 
 /*personaliza o botao do video*/
 .botaovideo {
@@ -429,8 +430,6 @@ o cursor passa por cima */
 .demonstracao h2 {
     color: #767373;
 }
-
-
 
 
 .selecao1 {
@@ -860,7 +859,59 @@ footer img {
     
     .barra2{
         margin: 370px 0;
-
     }
+    .maozinha{
+        width: 14px;
+        height: 18px;
+    }
+    .tituloRec{
+        font-size: 7px;
+    }
+    .subrec{
+        font-size: 6px;
+    }
+
+    .recursos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem; /* espacamento entre os itens*/
+        /* padding: 20px; espaco ao redor do item dentro */
+        margin: 70px 0;
+        justify-content: center;/* alinhar itens*/
+    }
+
+/* Estilo para cada div dentro do container .recursos */
+.recursos div {
+    width: 26vw;
+    height: 16vh;
+    box-shadow: 10px 8px 10px #404CCD;
+}
+/*aumenta tamnaho quando passa o mouse*/
+.recursos div:hover {
+    transform: scale(1.2);
+}
+
+.recursos2 {
+    gap: 1rem;
+    margin: -50px 0;
+
+}
+
+.recursos2 div {
+    display: flex;
+    width: 26vw;
+    height: 16vh;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 10px #404CCD;
+    transition: transform 1s ease;
+    text-align: center;
+}
+
+.recursos2 div:hover {
+    transform: scale(1.2);
+}
+
 }
 
