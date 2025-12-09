@@ -267,6 +267,21 @@ o cursor passa por cima */
     justify-content: center;/* alinhar itens*/
 }
 
+.tituloRec {
+    font-size: 25px;
+    color:#4f46e6;
+    margin: 15px 0;
+}
+.subrec{
+    font-size: 15px;
+    color: #767373;
+    margin: 15px 0;
+}
+.maozinha{
+    margin: 5px 0;
+}
+
+
 /* Estilo para cada div dentro do container .recursos */
 .recursos div {
     display: flex;
@@ -337,14 +352,16 @@ o cursor passa por cima */
 
 .barra3 {
     position: absolute;
-    top: 820px;
+    /* top: 800px; */
     bottom: 0;
     left: 0;
     height: 1px;
     width: 100%;
-    background: #000000;
+    background: #a3a3a3;
     opacity: 1;
-    margin-top: 1400px;
+    /* margin-top: 200px; */
+    width: 100vw;
+    margin: -1030px 0;
 }
 
 /* ================================ */
@@ -772,6 +789,78 @@ footer img {
         margin: 550px 0;
 
     }
+    .maozinha{
+        width: 42px;
+        height: 42px;
+        margin: 9px 0;
+    }
+    .tituloRec{
+        font-size: 12px;
+        margin: 3px 0;
+        color: #4f46e6;
+    }
+    .subrec{
+        font-size: 10px;
+    }
+
+    .recursos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem; /* espacamento entre os itens*/
+        /* padding: 20px; espaco ao redor do item dentro */
+        margin: 70px 0;
+        justify-content: center;/* alinhar itens*/
+    }
+
+/* Estilo para cada div dentro do container .recursos */
+    .recursos div {
+        width: 26vw;
+        height: 16vh;
+        box-shadow: 10px 8px 10px #404CCD;
+    }
+    /*aumenta tamnaho quando passa o mouse*/
+    .recursos div:hover {
+        transform: scale(1.2);
+    }
+
+    .recursos2 {
+        gap: 1rem;
+        margin: -50px 0;
+
+    }
+
+    .recursos2 div {
+        display: flex;
+        width: 26vw;
+        height: 16vh;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        box-shadow: 10px 10px 10px #404CCD;
+        transition: transform 1s ease;
+        text-align: center;
+    }
+
+    .recursos2 div:hover {
+        transform: scale(1.2);
+    }
+
+    .botaovideo {  
+        width: 30vw;
+        height: 3vh;
+        margin: 90px auto 0 auto; /* centraliza horizontalmente */
+        border-radius: 50px;
+        font-family: sans-serif;
+        color: #ffff;
+        font-size: 10px;
+        white-space: nowrap;
+        transition: transform 0.5s ease;
+        margin: 80px 17rem;
+    }
+
+    .barra3{
+        margin: 8px 0;
+    }
 }
 @media(max-width: 375px) {
     .header{
@@ -863,12 +952,16 @@ footer img {
     .maozinha{
         width: 14px;
         height: 18px;
+        margin: 5px 0;
     }
     .tituloRec{
-        font-size: 7px;
+        font-size: 8px;
+        margin: 0px 0;
+        color: #4f46e6;
     }
     .subrec{
-        font-size: 6px;
+        font-size: 7px;
+        margin: 5px 0;
     }
 
     .recursos {
@@ -881,37 +974,54 @@ footer img {
     }
 
 /* Estilo para cada div dentro do container .recursos */
-.recursos div {
-    width: 26vw;
-    height: 16vh;
-    box-shadow: 10px 8px 10px #404CCD;
-}
-/*aumenta tamnaho quando passa o mouse*/
-.recursos div:hover {
-    transform: scale(1.2);
-}
+    .recursos div {
+        width: 26vw;
+        height: 16vh;
+        box-shadow: 10px 8px 10px #404CCD;
+    }
+    /*aumenta tamnaho quando passa o mouse*/
+    .recursos div:hover {
+        transform: scale(1.2);
+    }
 
-.recursos2 {
-    gap: 1rem;
-    margin: -50px 0;
+    .recursos2 {
+        gap: 1rem;
+        margin: -50px 0;
 
-}
+    }
 
-.recursos2 div {
-    display: flex;
-    width: 26vw;
-    height: 16vh;
-    flex-direction: column;
-    align-items: center;
-    font-family: sans-serif;
-    box-shadow: 10px 10px 10px #404CCD;
-    transition: transform 1s ease;
-    text-align: center;
-}
+    .recursos2 div {
+        display: flex;
+        width: 26vw;
+        height: 16vh;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        box-shadow: 10px 10px 10px #404CCD;
+        transition: transform 1s ease;
+        text-align: center;
+    }
 
-.recursos2 div:hover {
-    transform: scale(1.2);
-}
+    .recursos2 div:hover {
+        transform: scale(1.2);
+    }
+
+    .botaovideo {  
+        width: 30vw;
+        height: 3vh;
+        margin: 90px auto 0 auto; /* centraliza horizontalmente */
+        border-radius: 50px;
+        font-family: sans-serif;
+        color: #ffff;
+        font-size: 5px;
+        white-space: nowrap;
+        transition: transform 0.5s ease;
+        margin: 80px 8.3rem;
+    }
+
+    .barra3{
+        margin: -10px 0;
+    }
 
 }
 
