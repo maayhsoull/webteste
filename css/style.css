@@ -1,0 +1,773 @@
+html {
+    scroll-behavior: smooth;
+}
+/* ================= HEADER ================= */
+body {
+    /* margin-top: 8vh; */
+    background-color: #F4F2FC;
+    /* height: 100%; */
+    margin: 0;
+}
+.header {
+    display: flex;
+    width: 100%;
+    /* width: 100vw; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* padding: 15px 0; */
+    /* height: 8vh; */
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    /* z-index: 999; */
+    background-color: tomato;
+}
+.container{
+    /* definir tamanho maximo para não ter scroll lateral*/
+    max-width: 1440px;
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.title{
+    white-space: nowrap; /* não permite quebrar o texto*/
+}
+
+
+.logo {
+    display: flex;
+    color: #404CCD;
+    font-size: 20px;
+    align-items: center;
+    padding: 10px 2rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.logo img {
+    height: 5vh;
+    width: auto;
+}
+
+.pingo{
+    display: flex;
+    background-color: purple;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.conjunto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conjunto:hover .pingo{
+    color: #EB0029;
+    opacity: 1;
+}
+
+.conjunto:hover a {
+    color: blue
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-family: sans-serif;
+    font-size: 25px;
+    padding: 0 5rem;
+}
+
+/*
+   realiza animação quando o cursor é apontado, vira uma "mãozinha"
+*/
+.navbar a {
+    transition: transform 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+}
+
+
+.navbar a:hover {
+    transform: scale(1.2);
+    color: #404CCD;
+}
+
+.header-efeito {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+}
+
+.header-efeito .barra {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #4f46e6;
+    opacity: 0;
+    animation: fadein 1.2s ease forwards; 
+}
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+    }
+}
+/* ======================================== */
+
+
+
+
+
+/* ================= MAIN ================= */
+
+   /* ============== HOME ============== */
+.image-container {
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+    margin-top: 80px;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100vw;
+}
+
+.texto-sobreposto {
+    position: absolute;
+    top: 35%;
+    color: #fff;
+    text-shadow: 6px 2px 4px #404CCD;
+    font-size: 20px;
+}
+
+.texto-sobreposto h1 {
+    position: absolute;
+    /* left: 20px; */
+    /* top: 240%; */
+    margin: 16px 0px 16px 151px;
+    font-size: 50px;
+
+}
+
+.texto-sobreposto h5 {
+    position: absolute;
+    top: 100px;
+    margin: 16px 16px 0px 200px;
+    background-color: #404CCD;
+    width: 347px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.texto-sobreposto h3 {
+    margin: 0px 0px 0px 99px;
+    font-size: 25px;
+}
+
+/* animação do botão, faz com que o botão pisque e aumente de tamanho quando
+o cursor passa por cima */
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.botao {
+    animation: blink 2.7s linear infinite;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.botao:hover {
+    transform: scale(1.2);
+}
+
+   /* ================================ */
+
+   /* ========== INTRODUÇÃO ========== */
+
+.introducao {               /*classe pai*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    align-items: center;
+    color: #404CCD;
+}
+
+.texto h1{
+    font-size: 45px;
+    margin: 0px 32px 29px 0px;
+}
+
+.texto h4 {
+    color: #6B6969;
+    font-size: 30px;
+    font-weight: lighter;
+    width: 578px;
+    height: 180px;
+    margin: 0px 100px 0px 76px;
+}
+.imgPc{
+    width: 641px;
+    height: 456px;
+}
+
+.barra2 {
+    position: absolute;
+    top: 800px;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #000000;
+    opacity: 1;
+    margin-top: 200px;
+}
+
+    /* ================================ */
+
+
+/* =========== RECURSOS =========== */
+/* personalizar container principal*/
+.recursos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px; /* espacamento entre os itens*/
+    padding: 20px; /* espaco ao redor do item dentro*/
+    margin-top: 300px; /**/
+    justify-content: center;/* alinhar itens*/
+}
+
+/* Estilo para cada div dentro do container .recursos */
+.recursos div {
+    display: flex;
+    width: 24vw;
+    height: 26vh;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 10px #404CCD;
+    transition: transform 1s ease;
+    text-align: center;
+}
+/*aumenta tamnaho quando passa o mouse*/
+.recursos div:hover {
+    transform: scale(1.2);
+}
+
+.recursos2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 20px;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.recursos2 div {
+    display: flex;
+    width: 24vw;
+    height: 28vh;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 10px #404CCD;
+    transition: transform 1s ease;
+    text-align: center;
+}
+
+.recursos2 div:hover {
+    transform: scale(1.2);
+}
+
+/*personaliza o botao do video*/
+.botaovideo {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    background-color: #404CCD;
+    width: 22vw;
+    height: 6vh;
+
+    margin: 90px auto 0 auto; /* centraliza horizontalmente */
+    
+
+    margin-top: 90px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    color: #ffff;
+    transition: transform 0.5s ease;
+}
+/*efeito no botao de video*/
+.botaovideo:hover {
+    transform: scale(1.2);
+}
+
+
+.barra3 {
+    position: absolute;
+    top: 820px;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #000000;
+    opacity: 1;
+    margin-top: 1400px;
+}
+
+/* ================================ */
+
+/* ========== INFORMAÇÃO ========== */
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    margin-top: 300px;
+}
+
+.info h2 {
+    margin-top: 50px;
+    width: 70vw;
+    color: #767373;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* ================================ */
+
+/* ============ VIDEOS ============ */
+.video-apresentacao {
+    position: relative;
+    display: inline-block;
+    margin-top: 120px;
+}
+
+.fundo {
+    display: block;
+    max-width: 100%;
+    width: 100vw;
+    height: auto;
+}
+
+.youtube {
+    position: absolute;
+    top: 15%;
+    left: 46%;
+}
+
+.titulo {
+    position: absolute;
+    top: 45%;
+    left: 34%;
+    font-family: sans-serif;
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.titulo h2 {
+    text-decoration: underline;
+}
+
+/* ================================ */
+
+/* ======== DEMONSTRAÇÔES ========= */
+.demonstracao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin-top: 90px;
+}
+
+.demonstracao h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.demonstracao h2 {
+    color: #767373;
+}
+
+
+
+
+.selecao1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 20px;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+.selecao1 div {
+    display: flex;
+    width: 18vw;
+    height: 25vh;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 10px #404CCD;
+    transition: transform 1s ease;
+    text-align: center;
+}
+
+.selecao1 div:hover {
+    transform: scale(1.2);
+}
+
+.selecao2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 20px;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.selecao2 div {
+    display: flex;
+    width: 18vw;
+    height: 25vh;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    transition: transform 1s ease;
+    box-shadow: 10px 10px 10px #404CCD;
+    text-align: center;
+}
+
+.selecao2 div:hover {
+    transform: scale(1.2);
+}
+
+.barra4 {
+    position: absolute;
+    top: 3300px;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #000000;
+    opacity: 1;
+    margin-top: 1300px;
+}
+
+/* ================================ */
+
+/* ============ PREÇOS ============ */
+.caixa-grande {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+.texto-criativo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-criativo h1 {
+    width: 450px;
+    margin-top: 19px;
+}
+
+.caixa-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 75px;
+}
+
+.ladoA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 486px;
+    height: 655px;
+    box-shadow: 10px 10px 10px #404CCD;
+    border: 1px solid #404CCD;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.ladoA img {
+    margin-top: 60px;
+    width: 130px;
+    height: auto;
+}
+
+.ladoA h3 {
+    font-size: 27px;
+    width: 440px;
+    text-align: center;
+}
+
+.ladoA h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F4F2FC;
+    background-color: #404CCD;
+    width: 223px;
+    height: 50px;
+    font-size: 33px;
+    border-radius: 50px;
+    transition: transform 1s ease, rotate 1.2s;
+}
+
+.ladoA h2:hover {
+    transform: scale(1.2);
+    rotate: -4deg;
+}
+
+.ladoB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 486px;
+    height: 655px;
+    box-shadow: 10px 10px 10px #404CCD;
+    border: 1px solid #404CCD;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.ladoB img {
+    margin-top: 40px;
+}
+
+.ladoB h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F4F2FC;
+    background-color: #404CCD;
+    width: 223px;
+    height: 50px;
+    font-size: 33px;
+    border-radius: 50px;
+    transition: transform 1s ease, rotate 1.2s;
+}
+
+.ladoB h2:hover {
+    transform: scale(1.2);
+    rotate: 4deg;
+}
+
+.ladoB h3 {
+    font-size: 27px;
+    width: 440px;
+    text-align: center;
+}
+
+/* ================================ */
+
+/* =========== CONTATO ============ */
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+    font-family: sans-serif;
+}
+
+.contato h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.contato h3 {
+    width: 25vw;
+    text-align: center;
+    line-height: 1.5;
+    color: #767373;
+}
+
+.number {
+    display: flex;
+    background-color: #404CCD;
+    width: 15vw;
+    height: 6vh;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 810px;
+    margin-top: 70px;
+    margin-bottom: 150px;
+    font-family: sans-serif;
+    color: #fff;
+    border-radius: 50px;
+    transition: transform 1s ease;
+}
+
+.number:hover {
+    transform: scale(1.2);
+}
+
+/* ================================ */
+
+/* ========================================== */
+
+
+
+/* ================= FOOTER ================= */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    background-color:#404CCD;
+    color: #fff;
+    height: 10vh;
+}
+
+footer h1 {
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+}
+/* ========================================== */
+@media(max-width: 375px) {
+    .header{
+        width: 100%;
+        /* width: 100vw; */
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        /* padding: 15px 0; */
+        /* height: 8vh; */
+        position: fixed;
+        top: 0;
+        /* left: 0; */
+        /* z-index: 999; */
+        background-color: tomato;
+
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 12px;
+        align-items: center;
+        padding: 18px 0;
+        font-family: sans-serif;
+        height: 65px;
+        text-align: center;
+    }
+    .logo{
+        font-size: 12px;
+        padding: 0 1rem;
+
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: none;
+        font-family: sans-serif;
+        font-size: 12px
+
+    }
+    
+}
+@media(max-width: 768px) {
+    .header{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        background-color: tomato;
+
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 18px 0;
+        font-family: sans-serif;
+        height: 65px;
+        text-align: center;
+    }
+    .logo{
+        font-size: 12px;
+        padding: 0 1rem;
+
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: none;
+        font-family: sans-serif;
+        font-size: 16px
+
+    }
+    
+}
+
