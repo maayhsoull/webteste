@@ -4,7 +4,7 @@ html {
 /* ================= HEADER ================= */
 body {
     background-color: #F4F2FC;
-    margin: 0;
+    font-family: sans-serif; /* torna padrão a fonte do código */   
 }
 .header {
     display: flex;
@@ -15,11 +15,12 @@ body {
     position: fixed;
     z-index: 999;
     top: 0;
+    left: 0;
 }
 .container{
     /* definir tamanho maximo para não ter scroll lateral*/
-    /* max-width: 1440px; */
-    padding: 0 1rem;
+    /* max-width: 1200px; */
+    padding: 10px 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -34,13 +35,10 @@ body {
     color: #404CCD;
     font-size: 20px;
     align-items: center;
-    padding: 10px 2rem;
-    font-family: sans-serif;
-    text-align: center;
 }
 
 .logo img {
-    height: 5vh;
+    height: 40px;
     width: auto;
 }
 
@@ -74,7 +72,6 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    font-family: sans-serif;
     font-size: 25px;
     padding: 0 5rem;
 }
@@ -121,47 +118,46 @@ body {
 /* ================= MAIN ================= */
 
    /* ============== HOME ============== */
+ 
+
 .image-container {
     position: relative;
-    display: inline-block;
-    font-family: sans-serif;
-    margin: 4rem 0;
+    width: 100%;
 }
 
 .image-container img {
-    display: flex;
+    display: block;
     /* max-width: 100%; */
-    width: 100vw;
-    /* height: auto; */
+    width: 100%;
+    height: auto;
+
 }
 
 .texto-sobreposto {
     position: absolute;
     top: 35%;
     color: #fff;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
     text-shadow: 6px 2px 4px #404CCD;
-    /* white-space: nowrap; */
-
+    white-space: nowrap;
 }
 
 .texto-sobreposto h1 {
-    position: absolute;
-    /* left: 20px; */
-    /* top: 240%; */
-    /* margin: 16px 0px 16px 151px; */
-    margin: 16px 8rem;
+
+    margin-bottom: 10px;
     font-size: 50px;
 }
 
 .texto-sobreposto h5 {
-    position: absolute;
-    top: 100px;
     /* margin: 16px 16px 0px 200px; */
-    margin: 16px 11.5rem;
+    margin-top: 15px;
+    padding: 10px 20px;
+    display: inline-block;
     background-color: #404CCD;
     width: 347px;
     height: 33px;
-    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
@@ -169,8 +165,8 @@ body {
 
 .texto-sobreposto h3 {
     /* margin: 0px 0px 0px 99px; */
-    margin: 0 4rem;
-    font-size: 25px;
+    margin: 20px auto;
+    font-size: 22px;
 }
 
 /* animação do botão, faz com que o botão pisque e aumente de tamanho quando
@@ -206,54 +202,54 @@ o cursor passa por cima */
 
 .introducao {               /*classe pai*/
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 100vw;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 20px;
+    /* margin-top: 80px; */
+    flex-wrap: wrap;
 }
 
 .texto {
-    display: flex;
     text-align: center;
     flex-direction: column;
-    font-family: sans-serif;
     align-items: center;
+    max-width: 600px;
     color: #404CCD;
 }
 
 .texto h1{
-    font-size: 45px;
-    margin: 0px 32px 29px 0px;
+    font-size: 40px;
+    margin-bottom: 15px;
+    white-space: nowrap;
 }
 
 .texto h4 {
     color: #6B6969;
     font-size: 30px;
     font-weight: lighter;
-    width: 578px;
-    height: 180px;
-    margin: 0px 100px 0px 76px;
+    line-height: 1.2;
 }
 .imgPc{
-    width: 641px;
-    height: 456px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 .barra2 {
-    position: absolute;
+    /* position: absolute;
     /* top: 800px; */
-    bottom: 0;
-    left: 0;
-    height: 1px;
+    /* bottom: 0;
+    left: 0;  */
+    height: 2px;
     width: 100%;
     background: #a3a3a3;
     opacity: 1;
     /* margin-top: 200px; */
-    width: 100vw;
-    margin: 35px 0;
+    margin: 40px 0;
 }
 
-    /* ================================ */
+/* ================================ */
 
 
 /* =========== RECURSOS =========== */
@@ -261,11 +257,13 @@ o cursor passa por cima */
 .recursos {
     display: flex;
     flex-wrap: wrap;
-    gap: 90px; /* espacamento entre os itens*/
-    padding: 20px; /* espaco ao redor do item dentro*/
-    margin: 115px 0;
+    gap: 30px; /* espacamento entre os itens*/
+    padding: 30px; /* espaco ao redor do item dentro*/
+    /* margin: 115px 0; */
     justify-content: center;/* alinhar itens*/
 }
+
+/* PAREI AQUIIIIIIIIIIII */
 
 .tituloRec {
     font-size: 25px;
@@ -285,8 +283,9 @@ o cursor passa por cima */
 /* Estilo para cada div dentro do container .recursos */
 .recursos div {
     display: flex;
-    width: 24vw;
-    height: 26vh;
+    width: 300px;
+    height: auto;
+    padding: 20px;
     flex-direction: column;
     align-items: center;
     font-family: sans-serif;
@@ -332,9 +331,9 @@ o cursor passa por cima */
 
     align-items: center;
     background-color: #404CCD;
-    width: 22vw;
+    width: fit-content;
     height: 6vh;
-
+    padding: 10px 20px;
     margin: 90px auto 0 auto; /* centraliza horizontalmente */
     
 
@@ -351,17 +350,16 @@ o cursor passa por cima */
 
 
 .barra3 {
-    position: absolute;
+    position: static;
     /* top: 800px; */
     bottom: 0;
     left: 0;
-    height: 1px;
-    width: 100%;
+    height: 2px;
     background: #a3a3a3;
     opacity: 1;
     /* margin-top: 200px; */
-    width: 100vw;
-    margin: -1030px 0;
+    width: 100%;
+    margin: 40px 0;
 }
 
 /* ================================ */
@@ -404,19 +402,19 @@ o cursor passa por cima */
     /* max-width: 100%; */
     width: 100vw;
     height: auto;
-    margin: 180px 0;
+    margin: 180px 0px 0px 0px ;
 }
 
 .youtube {
     position: absolute;
-    top: 15%;
+    top: 18%;
     left: 46%; 
     margin: 90px 0 ;
 }
 
 .titulo {
     position: absolute;
-    top: 45%;
+    top: 60%;
     left: 30%;
     font-family: sans-serif;
     color:#fff;
@@ -445,12 +443,14 @@ o cursor passa por cima */
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    margin-top: 90px;
+    /* margin-top: 90px; */
+    margin: 50px 0;
+    /* background-color: #EB0029; */
 }
 
 .demonstracao h1 {
     font-size: 50px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .demonstracao h2 {
@@ -462,8 +462,9 @@ o cursor passa por cima */
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
-    padding: 20px;
-    margin-top: 200px;
+    padding: 40px;
+    /* margin-top: 200px; */
+    /* margin: 0px 0; */
     justify-content: center;
 }
 
@@ -510,14 +511,16 @@ o cursor passa por cima */
 
 .barra4 {
     position: absolute;
-    top: 3300px;
+    /* top: 800px; */
     bottom: 0;
     left: 0;
     height: 1px;
     width: 100%;
-    background: #000000;
+    background: #a3a3a3;
     opacity: 1;
-    margin-top: 1300px;
+    /* margin-top: 200px; */
+    width: 100vw;
+    margin: -3030px 0;
 }
 
 /* ================================ */
@@ -712,6 +715,8 @@ footer img {
 /* ========================================== */
 
 @media(max-width: 768px) {
+    
+/* ================= HEADER ================= */
     .header{
         width: 100%;
         align-items: center;
@@ -748,26 +753,31 @@ footer img {
 
     .texto-sobreposto{
         font-size: 10px;
-        margin: -5px 0;
+        /* margin: -5px 0; */
     }
     .texto-sobreposto h3{
         font-size: 15px;
-        margin: -5px 5rem;
+        /* margin: -5px 5rem; */
     }
     .texto-sobreposto h1{
         font-size: 25px;
-        margin: 8px 7rem;
+        /* margin: 8px 7rem; */
     }
     .texto-sobreposto h5{
         width: 203px;
         height: 26px;
         font-size: 10px;
-        margin: -50px 8rem;
+        /* margin: -50px 8rem; */
         white-space: nowrap;
     }
+    /* ========================================== */
+
+    /* ========== INTRODUÇÃO ========== */
+
     .imgPc{
         display: none;
     }
+
     .introducao{
         flex-direction: column;
     }
@@ -798,6 +808,10 @@ footer img {
         margin: 550px 0;
 
     }
+    /* ========================================== */
+
+    /* =========== RECURSOS =========== */
+
     .maozinha{
         width: 42px;
         height: 42px;
@@ -823,9 +837,7 @@ footer img {
 
 /* Estilo para cada div dentro do container .recursos */
     .recursos div {
-        width: 26vw;
-        height: 16vh;
-        box-shadow: 10px 8px 10px #404CCD;
+        width: 45%;
     }
     /*aumenta tamnaho quando passa o mouse*/
     .recursos div:hover {
@@ -867,9 +879,13 @@ footer img {
         margin: 80px 17rem;
     }
 
-    .barra3{
-        margin: 8px 0;
-    }
+
+    /* ========================================== */
+
+    /* ================informacao================= */
+
+    
+
     .info h1{
         font-size: 25px;
         margin: 8px 0;
@@ -878,6 +894,8 @@ footer img {
         font-size: 12px;
         margin: 9px 0;
     }
+    /* ========================================== */
+    /* ==================VIDEOS===================== */
 
     .video-apresentacao {
         position: relative;
@@ -890,12 +908,12 @@ footer img {
         /* max-width: 100%; */
         width: 100vw;
         height: auto;
-        margin: 60px 0;
+        margin: 60px 0px 0px 0px;
     }
     
     .youtube {
         position: absolute;
-        left: 46%; 
+        left: 47%; 
         width: 61px;
         height: 63px;
         margin: 40px 0;
@@ -903,7 +921,7 @@ footer img {
     
     .titulo {
         position: absolute;
-        top: 45%;
+        top: 55%;
         left: 30%;
         font-family: sans-serif;
         color:#fff;
@@ -926,9 +944,109 @@ footer img {
         font-size: 15px;
         margin: 50px -19px;
     }
+    /* ========================================== */
+
+    /* ======== DEMONSTRAÇÔES ========= */
+    .demonstracao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        /* margin-top: 90px; */
+        /* margin: 50px 0; */
+        /* background-color: #EB0029; */
+    }
+
+    .demonstracao h1 {
+        font-size: 25px;
+        /* margin-bottom: 30px; */
+    }
+
+    .demonstracao h2 {
+        color: #767373;
+        font-size: 15px;
+    }
+
+
+    .selecao1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 80px;
+        padding: 40px;
+        /* margin-top: 200px; */
+        /* margin: 0px 0; */
+        justify-content: center;
+    }
+
+    .selecao1 div {
+        display: flex;
+        width: 45vw;
+        height: 30vh;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        box-shadow: 10px 10px 10px #404CCD;
+        transition: transform 1s ease;
+        text-align: center;
+    }
+
+    .selecao1 div:hover {
+        transform: scale(1.2);
+    }
+
+    .selecao2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        padding: 20px;
+        /* margin-top: 100px; */
+        justify-content: center;
+    }
+
+    .selecao2 div {
+        display: flex;
+        width: 45vw;
+        height: 30vh;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        transition: transform 1s ease;
+        box-shadow: 10px 10px 10px #404CCD;
+        text-align: center;
+    }
+
+    .selecao2 div:hover {
+        transform: scale(1.2);
+    }
+
+    .barra4 {
+        position: absolute;
+        /* top: 800px; */
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: #a3a3a3;
+        opacity: 1;
+        /* margin-top: 200px; */
+        width: 100vw;
+        margin: -3030px 0;
+    }
+
+/* ================================ */
+
 
 }
-@media(max-width: 375px) {
+@media(max-width: 480px) {
+    /* ================header=================== */
+    body{
+        /* display: none; */
+    }
     .header{
         width: 100%;
         align-items: center;
@@ -961,26 +1079,31 @@ footer img {
         font-family: sans-serif;
         font-size: 12px
     }
+    
 
     .texto-sobreposto{
         font-size: 10px;
-        margin: -5px 0;
+        /* margin: -5px 0;  */
     }
     .texto-sobreposto h3{
         font-size: 9px;
-        margin: -5px 5rem;
+        /* margin: -5px 5rem; */
     }
     .texto-sobreposto h1{
         font-size: 15px;
-        margin: 8px 7rem;
+        /* margin: 8px 7rem; */
 
 
     }
     .texto-sobreposto h5{
         width: 160px;
         height: 25px;
-        margin: -69px 6.3rem;
+        /* margin: -69px 6.3rem; */
     }
+
+    /* ========================================== */
+    /* ===============INTRODUCAO=============== */
+
     .imgPc{
         display: none;
     }
@@ -1012,6 +1135,10 @@ footer img {
     .barra2{
         margin: 370px 0;
     }
+    
+    /* ========================================== */
+    /* ================recursos===================== */
+
     .maozinha{
         width: 14px;
         height: 18px;
@@ -1038,9 +1165,7 @@ footer img {
 
 /* Estilo para cada div dentro do container .recursos */
     .recursos div {
-        width: 26vw;
-        height: 16vh;
-        box-shadow: 10px 8px 10px #404CCD;
+        width: 90%;
     }
     /*aumenta tamnaho quando passa o mouse*/
     .recursos div:hover {
@@ -1076,15 +1201,16 @@ footer img {
         border-radius: 50px;
         font-family: sans-serif;
         color: #ffff;
-        font-size: 5px;
+        font-size: 12px;
         white-space: nowrap;
         transition: transform 0.5s ease;
         margin: 80px 8.3rem;
     }
 
-    .barra3{
-        margin: -10px 0;
-    }
+    /* ========================================== */
+
+    /* =================VIDEOS=================== */
+
 
     .info {
         display: flex;
@@ -1105,6 +1231,9 @@ footer img {
         font-size: 7px;
         margin: 9px 0;
     }
+
+    /* ========================================== */
+    /* =================VIDEOS==================== */
 
     .video-apresentacao {
         position: relative;
@@ -1153,6 +1282,8 @@ footer img {
         font-size: 8px;
         margin: 30px -19px;
     }
+ /* ========================================== */
+
 
 }
 
