@@ -126,7 +126,7 @@ body {
 }
 
 .image-container img {
-    /* display: block; */
+    display: block;
     /* max-width: 100%; */
     width: 100%;
     height: auto;
@@ -211,7 +211,6 @@ o cursor passa por cima */
 }
 
 .texto {
-    display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -264,16 +263,17 @@ o cursor passa por cima */
     justify-content: center;/* alinhar itens*/
 }
 
+/* PAREI AQUIIIIIIIIIIII */
 
 .tituloRec {
     font-size: 25px;
     color:#4f46e6;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 .subrec{
     font-size: 15px;
     color: #767373;
-    /* margin: 15px 0; */
+    margin: 15px 0;
 }
 .maozinha{
     margin: 5px 0;
@@ -282,12 +282,13 @@ o cursor passa por cima */
 
 /* Estilo para cada div dentro do container .recursos */
 .recursos div {
-    /* display: flex; */
+    display: flex;
     width: 300px;
-    /* height: auto; */
+    height: auto;
     padding: 20px;
     flex-direction: column;
     align-items: center;
+    font-family: sans-serif;
     box-shadow: 10px 10px 10px #404CCD;
     transition: transform 1s ease;
     text-align: center;
@@ -300,19 +301,19 @@ o cursor passa por cima */
 .recursos2 {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px; /* espacamento entre os itens*/
-    padding: 30px; /* espaco ao redor do item dentro*/
-    /* margin: 115px 0; */
-    justify-content: center;/* alinhar itens*/
+    gap: 80px;
+    padding: 20px;
+    margin-top: 100px;
+    justify-content: center;
 }
 
 .recursos2 div {
-    /* display: flex; */
-    width: 300px;
-    /* height: auto; */
-    padding: 20px;
+    display: flex;
+    width: 24vw;
+    height: 28vh;
     flex-direction: column;
     align-items: center;
+    font-family: sans-serif;
     box-shadow: 10px 10px 10px #404CCD;
     transition: transform 1s ease;
     text-align: center;
@@ -327,13 +328,16 @@ o cursor passa por cima */
 .botaovideo {
     display: flex;
     justify-content: center;
+
     align-items: center;
     background-color: #404CCD;
     width: fit-content;
-    /* height: 6vh; */
-    padding: 12px 25px;
-    /* margin: 90px auto 0 auto; centraliza horizontalmente */
-    margin: 40px auto;
+    height: 6vh;
+    padding: 10px 20px;
+    margin: 90px auto 0 auto; /* centraliza horizontalmente */
+    
+
+    margin-top: 90px;
     border-radius: 50px;
     font-family: sans-serif;
     color: #ffff;
@@ -346,10 +350,10 @@ o cursor passa por cima */
 
 
 .barra3 {
-    /* position: static; */
+    position: static;
     /* top: 800px; */
-    /* bottom: 0;
-    left: 0; */
+    bottom: 0;
+    left: 0;
     height: 2px;
     background: #a3a3a3;
     opacity: 1;
@@ -362,27 +366,26 @@ o cursor passa por cima */
 
 /* ========== INFORMAÇÃO ========== */
 .info {
-    text-align: center;
-    padding: 40px 20px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-direction: column; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
     /* margin-top: 300px; */
 }
 .info h1{
     font-size: 45px;
-    margin-bottom: 20px;
+    margin: 200px 0;
 }
 
 .info h2 {
-    /* margin-top: 50px; */
-    /* width: 70vw; */
+    margin-top: 50px;
+    width: 70vw;
     color: #767373;
-    /* text-align: center; */
+    text-align: center;
     line-height: 1.5;
     font-size: 25px;
-    margin: 0 auto;
+    margin: -150px 0;
 }
 
 /* ================================ */
@@ -390,60 +393,58 @@ o cursor passa por cima */
 /* ============ VIDEOS ============ */
 .video-apresentacao {
     position: relative;
-    width: 100%;
-    margin-top: 60px;
-    /* display: inline-block; */
+    display: inline-block;
     /* margin-top: 120px; */
 }
 
 .fundo {
-    /* display: flex; */
+    display: flex;
     /* max-width: 100%; */
-    width: 100%;
-    /* height: auto; */
-    /* margin: 180px 0px 0px 0px ; */
+    width: 100vw;
+    height: auto;
+    margin: 180px 0px 0px 0px ;
 }
 
 .youtube {
     position: absolute;
-    top: 35%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    width: 130px;
+    top: 18%;
+    left: 46%; 
+    margin: 90px 0 ;
 }
 
 .titulo {
     position: absolute;
-    top: 55%;
-    left: 50%;
+    top: 60%;
+    left: 30%;
+    font-family: sans-serif;
     color:#fff;
     align-items: center;
-    transform: translateX(-25%);
-    width: 700px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .titulo h1 {
     font-size: 50px;
-    /* margin-bottom: 10px; */
+    margin-bottom: 50px;
 }
 
 .titulo h2 {
     text-decoration: underline;
-    font-size: 20px;
-
 }
 
 /* ================================ */
 
 /* ======== DEMONSTRAÇÔES ========= */
 .demonstracao {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
     /* margin-top: 90px; */
-    padding: 60px 20px;
-    text-align: center;
+    margin: 50px 0;
     /* background-color: #EB0029; */
 }
 
@@ -459,27 +460,24 @@ o cursor passa por cima */
 
 .selecao1 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 80px;
-    padding: 20px;
+    padding: 40px;
     /* margin-top: 200px; */
     /* margin: 0px 0; */
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .selecao1 div {
     display: flex;
-    width: 650px;
-    height: 350px;
-    /* flex-direction: column; */
-    justify-content: center;
+    width: 18vw;
+    height: 25vh;
+    flex-direction: column;
     align-items: center;
     font-family: sans-serif;
     box-shadow: 10px 10px 10px #404CCD;
     transition: transform 1s ease;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .selecao1 div:hover {
@@ -488,27 +486,23 @@ o cursor passa por cima */
 
 .selecao2 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
     gap: 80px;
     padding: 20px;
-    /* margin-top: 200px; */
-    /* margin: 0px 0; */
+    margin-top: 100px;
     justify-content: center;
 }
 
 .selecao2 div {
     display: flex;
-    width: 650px;
-    height: 350px;
-    /* flex-direction: column; */
-    justify-content: center;
+    width: 18vw;
+    height: 25vh;
+    flex-direction: column;
     align-items: center;
     font-family: sans-serif;
-    box-shadow: 10px 10px 10px #404CCD;
     transition: transform 1s ease;
-    /* text-align: center; */
+    box-shadow: 10px 10px 10px #404CCD;
+    text-align: center;
 }
 
 .selecao2 div:hover {
@@ -516,10 +510,17 @@ o cursor passa por cima */
 }
 
 .barra4 {
+    position: absolute;
+    /* top: 800px; */
+    bottom: 0;
+    left: 0;
+    height: 1px;
     width: 100%;
-    height: 2px;
-    background: #ccc;
-    margin: 40px 0;
+    background: #a3a3a3;
+    opacity: 1;
+    /* margin-top: 200px; */
+    width: 100vw;
+    margin: -3030px 0;
 }
 
 /* ================================ */
@@ -528,24 +529,27 @@ o cursor passa por cima */
 .caixa-grande {
     display: flex;
     flex-direction: column;
-    /* margin-top: 200px; */
-    padding: 40px 10px;
+    margin-top: 200px;
+    font-family: sans-serif;
     justify-content: center;
-}
-
-.caixa-media {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    justify-content: center;
-    /* margin-top: 75px; */
 }
 
 .texto-criativo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+}
+
+.texto-criativo h1 {
+    width: 450px;
+    margin-top: 19px;
+}
+
+.caixa-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 75px;
 }
 
 .ladoA {
@@ -564,15 +568,12 @@ o cursor passa por cima */
     margin-top: 60px;
     width: 130px;
     height: auto;
-    
 }
 
 .ladoA h3 {
     font-size: 27px;
     width: 440px;
     text-align: center;
-    font-weight: 500;
-
 }
 
 .ladoA h2 {
@@ -622,7 +623,6 @@ o cursor passa por cima */
     transition: transform 1s ease, rotate 1.2s;
 }
 
-
 .ladoB h2:hover {
     transform: scale(1.2);
     rotate: 4deg;
@@ -632,19 +632,8 @@ o cursor passa por cima */
     font-size: 27px;
     width: 440px;
     text-align: center;
-    font-weight: 500;
-}
-.texto-criativo p{
-    font-size: 30px;
-    font-weight: bold;
 }
 
-.texto-criativo h1{
-    font-size: 15;
-    font-weight: 500;
-    justify-content: space-between;
-    color: #767373;
-}
 /* ================================ */
 
 /* =========== CONTATO ============ */
@@ -652,9 +641,8 @@ o cursor passa por cima */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 250px; */
-    padding: 40px 15px;
-
+    margin-top: 250px;
+    font-family: sans-serif;
 }
 
 .contato h1 {
@@ -672,16 +660,15 @@ o cursor passa por cima */
 .number {
     display: flex;
     background-color: #404CCD;
-    width: fit-content;
-    margin: 30px auto;
+    width: 15vw;
     height: 6vh;
     font-size: 30px;
-    /* align-items: center;
-    justify-content: center; */
-    /* margin-left: 610px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 810px;
     margin-top: 70px;
-    margin-bottom: 150px; */
-    padding: 12px 25px;
+    margin-bottom: 150px;
+    font-family: sans-serif;
     color: #fff;
     border-radius: 50px;
     transition: transform 1s ease;
@@ -699,21 +686,14 @@ o cursor passa por cima */
 
 /* ================= FOOTER ================= */
 footer {
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color:#404CCD;
-    color: #fff; */
-    /* height: 10vh; */
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    font-family: sans-serif;
     background-color:#404CCD;
     color: #fff;
-    padding: 25px 10px;
-    gap: 20px;
-    
+    height: 10vh;
 }
 
 footer h1 {
@@ -737,15 +717,15 @@ footer img {
 @media(max-width: 768px) {
     
 /* ================= HEADER ================= */
-
-
     .header{
-        width: 100vw;
-        display: flex;
+        width: 100%;
         align-items: center;
+        flex-direction: column;
         justify-content: space-between;
         position: fixed;
         top: 0;
+        background-color: tomato;
+
     }
     .container{
         display: flex;
@@ -753,11 +733,8 @@ footer img {
         align-items: center;
         padding: 18px 0;
         font-family: sans-serif;
-        /* height: 65px; */
+        height: 65px;
         text-align: center;
-    }
-    .imgPc{
-        display: none;
     }
     .logo{
         font-size: 12px;
@@ -773,12 +750,325 @@ footer img {
         font-size: 16px
 
     }
-    .title{
-        font-size: 30px;
+
+    .texto-sobreposto{
+        font-size: 10px;
+        /* margin: -5px 0; */
+    }
+    .texto-sobreposto h3{
+        font-size: 15px;
+        /* margin: -5px 5rem; */
+    }
+    .texto-sobreposto h1{
+        font-size: 25px;
+        /* margin: 8px 7rem; */
+    }
+    .texto-sobreposto h5{
+        width: 203px;
+        height: 26px;
+        font-size: 10px;
+        /* margin: -50px 8rem; */
+        white-space: nowrap;
+    }
+    /* ========================================== */
+
+    /* ========== INTRODUÇÃO ========== */
+
+    .imgPc{
+        display: none;
+    }
+
+    .introducao{
+        flex-direction: column;
+    }
+    .texto{
+        width: 56vw;
+        height: 15vh;
+        justify-content: space-between;
+        margin: -40px 0;
+    }
+
+    .texto h1{
+        font-size: 28px;
+        white-space: nowrap;
+        margin: 0 1rem;
+        
+    }
+
+    .texto h4 {
+        color: #6B6969;
+        font-size: 18px;
+        font-weight: lighter;
+        width: 50vw;
+        height: 10vh;
+        margin: 10px 0;
+    }
+    
+    .barra2{
+        margin: 550px 0;
+
+    }
+    /* ========================================== */
+
+    /* =========== RECURSOS =========== */
+
+    .maozinha{
+        width: 42px;
+        height: 42px;
+        margin: 9px 0;
+    }
+    .tituloRec{
+        font-size: 12px;
+        margin: 3px 0;
+        color: #4f46e6;
+    }
+    .subrec{
+        font-size: 10px;
+    }
+
+    .recursos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem; /* espacamento entre os itens*/
+        /* padding: 20px; espaco ao redor do item dentro */
+        margin: 70px 0;
+        justify-content: center;/* alinhar itens*/
+    }
+
+/* Estilo para cada div dentro do container .recursos */
+    .recursos div {
+        width: 45%;
+    }
+    /*aumenta tamnaho quando passa o mouse*/
+    .recursos div:hover {
+        transform: scale(1.2);
+    }
+
+    .recursos2 {
+        gap: 1rem;
+        margin: -50px 0;
+
+    }
+
+    .recursos2 div {
+        display: flex;
+        width: 26vw;
+        height: 16vh;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        box-shadow: 10px 10px 10px #404CCD;
+        transition: transform 1s ease;
+        text-align: center;
+    }
+
+    .recursos2 div:hover {
+        transform: scale(1.2);
+    }
+
+    .botaovideo {  
+        width: 30vw;
+        height: 3vh;
+        margin: 90px auto 0 auto; /* centraliza horizontalmente */
+        border-radius: 50px;
+        font-family: sans-serif;
+        color: #ffff;
+        font-size: 10px;
+        white-space: nowrap;
+        transition: transform 0.5s ease;
+        margin: 80px 17rem;
+    }
+
+
+    /* ========================================== */
+
+    /* ================informacao================= */
+
+    
+
+    .info h1{
+        font-size: 25px;
+        margin: 8px 0;
+    }
+    .info h2{
+        font-size: 12px;
+        margin: 9px 0;
+    }
+    /* ========================================== */
+    /* ==================VIDEOS===================== */
+
+    .video-apresentacao {
+        position: relative;
+        display: inline-block;
+        /* margin-top: 120px; */
+    }
+    
+    .fundo {
+        display: flex;
+        /* max-width: 100%; */
+        width: 100vw;
+        height: auto;
+        margin: 60px 0px 0px 0px;
+    }
+    
+    .youtube {
+        position: absolute;
+        left: 47%; 
+        width: 61px;
+        height: 63px;
+        margin: 40px 0;
+    }
+    
+    .titulo {
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        font-family: sans-serif;
+        color:#fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .titulo h1 {
+        position: absolute;
+        font-size: 25px;    
+        left: 19%;
+        top: 10%   
+    }
+    
+    .titulo h2 {
+        text-decoration: underline;
+        font-size: 15px;
+        margin: 50px -19px;
+    }
+    /* ========================================== */
+
+    /* ======== DEMONSTRAÇÔES ========= */
+    .demonstracao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        /* margin-top: 90px; */
+        /* margin: 50px 0; */
+        /* background-color: #EB0029; */
+    }
+
+    .demonstracao h1 {
+        font-size: 25px;
+        /* margin-bottom: 30px; */
+    }
+
+    .demonstracao h2 {
+        color: #767373;
+        font-size: 15px;
+    }
+
+
+    .selecao1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 80px;
+        padding: 40px;
+        /* margin-top: 200px; */
+        /* margin: 0px 0; */
+        justify-content: center;
+    }
+
+    .selecao1 div {
+        display: flex;
+        width: 45vw;
+        height: 30vh;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        box-shadow: 10px 10px 10px #404CCD;
+        transition: transform 1s ease;
+        text-align: center;
+    }
+
+    .selecao1 div:hover {
+        transform: scale(1.2);
+    }
+
+    .selecao2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        padding: 20px;
+        /* margin-top: 100px; */
+        justify-content: center;
+    }
+
+    .selecao2 div {
+        display: flex;
+        width: 45vw;
+        height: 30vh;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        transition: transform 1s ease;
+        box-shadow: 10px 10px 10px #404CCD;
+        text-align: center;
+    }
+
+    .selecao2 div:hover {
+        transform: scale(1.2);
+    }
+
+    .barra4 {
+        position: absolute;
+        /* top: 800px; */
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: #a3a3a3;
+        opacity: 1;
+        /* margin-top: 200px; */
+        width: 100vw;
+        margin: -3030px 0;
+    }
+
+/* ================================ */
+
+
+}
+@media(max-width: 480px) {
+    /* ================header=================== */
+    body{
+        /* display: none; */
+    }
+    .header{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 12px;
+        align-items: center;
+        padding: 18px 0;
+        font-family: sans-serif;
+        height: 65px;
+        text-align: center;
     }
     .logo{
-        /* font-size: 12px; */
-        /* padding: 0 1rem; */
+        font-size: 12px;
+        padding: 0 1rem;
 
     }
     .navbar{
@@ -787,63 +1077,213 @@ footer img {
         gap: 1rem;
         padding: none;
         font-family: sans-serif;
-        font-size: 16px
-
+        font-size: 12px
     }
-
-    .texto-sobreposto h1 {
-        font-size: 22px;
-    }
-
-    .texto-sobreposto h3 {
-        font-size: 15px;
-    }
-
-    .texto-sobreposto h5 {
-        font-size: 12px;
-        margin-top: 0;
-
-    }
-
-    .navbar {
-        font-size: 14px;
-        gap: 10px;
-    }
-
-    .recursos div,
-    .recursos2 div {
-        width: 45%;
-    } 
     
-    .youtube{
-        width: 90px;
+
+    .texto-sobreposto{
+        font-size: 10px;
+        /* margin: -5px 0;  */
     }
-    .titulo h1 {
-        font-size: 35px;
-        margin-bottom: 10px;
+    .texto-sobreposto h3{
+        font-size: 9px;
+        /* margin: -5px 5rem; */
+    }
+    .texto-sobreposto h1{
+        font-size: 15px;
+        /* margin: 8px 7rem; */
+
+
+    }
+    .texto-sobreposto h5{
+        width: 160px;
+        height: 25px;
+        /* margin: -69px 6.3rem; */
     }
 
+    /* ========================================== */
+    /* ===============INTRODUCAO=============== */
+
+    .imgPc{
+        display: none;
+    }
+    .introducao{
+        flex-direction: column
+    }
+    .texto{
+        width: 50vw;
+        height: 15vh;
+        justify-content: space-between;
+        margin: -69px 0;
+    }
+
+    .texto h1{
+        font-size: 15px;
+        white-space: nowrap;
+        margin: 0 1rem; 
+    }
+
+    .texto h4 {
+        color: #6B6969;
+        font-size: 10px;
+        font-weight: lighter;
+        width: 50vw;
+        height: 10vh;
+        margin: 10px 0;
+    }
+    
+    .barra2{
+        margin: 370px 0;
+    }
+    
+    /* ========================================== */
+    /* ================recursos===================== */
+
+    .maozinha{
+        width: 14px;
+        height: 18px;
+        margin: 5px 0;
+    }
+    .tituloRec{
+        font-size: 8px;
+        margin: 0px 0;
+        color: #4f46e6;
+    }
+    .subrec{
+        font-size: 7px;
+        margin: 5px 0;
+    }
+
+    .recursos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem; /* espacamento entre os itens*/
+        /* padding: 20px; espaco ao redor do item dentro */
+        margin: 70px 0;
+        justify-content: center;/* alinhar itens*/
+    }
+
+/* Estilo para cada div dentro do container .recursos */
+    .recursos div {
+        width: 90%;
+    }
+    /*aumenta tamnaho quando passa o mouse*/
+    .recursos div:hover {
+        transform: scale(1.2);
+    }
+
+    .recursos2 {
+        gap: 1rem;
+        margin: -50px 0;
+
+    }
+
+    .recursos2 div {
+        display: flex;
+        width: 26vw;
+        height: 16vh;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        box-shadow: 10px 10px 10px #404CCD;
+        transition: transform 1s ease;
+        text-align: center;
+    }
+
+    .recursos2 div:hover {
+        transform: scale(1.2);
+    }
+
+    .botaovideo {  
+        width: 30vw;
+        height: 3vh;
+        margin: 90px auto 0 auto; /* centraliza horizontalmente */
+        border-radius: 50px;
+        font-family: sans-serif;
+        color: #ffff;
+        font-size: 12px;
+        white-space: nowrap;
+        transition: transform 0.5s ease;
+        margin: 80px 8.3rem;
+    }
+
+    /* ========================================== */
+
+    /* =================VIDEOS=================== */
+
+
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: sans-serif;
+        margin: -60px 0;
+    }
+    
+    .info h1{
+        font-size: 10px;
+    }
+    .info h2 {
+        color: #767373;
+        text-align: center;
+        /* line-height: 1.5; */
+        font-size: 7px;
+        margin: 9px 0;
+    }
+
+    /* ========================================== */
+    /* =================VIDEOS==================== */
+
+    .video-apresentacao {
+        position: relative;
+        display: inline-block;
+        /* margin-top: 120px; */
+    }
+    
+    .fundo {
+        display: flex;
+        /* max-width: 100%; */
+        width: 100vw;
+        height: auto;
+        margin: 60px 0;
+    }
+    
+    .youtube {
+        position: absolute;
+        left: 46%; 
+        width: 26px;
+        height: 27px;
+        margin: 40px 0;
+    }
+    
+    .titulo {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        font-family: sans-serif;
+        color:#fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .titulo h1 {
+        position: absolute;
+        font-size: 10px;    
+        left: 19%;
+        top: 10%   
+    }
+    
     .titulo h2 {
         text-decoration: underline;
-        font-size: 15px;
+        font-size: 8px;
+        margin: 30px -19px;
     }
-    .texto-criativo h1{
-        font-size: 25px;
+ /* ========================================== */
 
-    }
-    footer h1{
-        font-size: 16px;
-    }
-    footer img {
-        width: 30px;
-        height: auto;
-    }
-}
-
-@media(max-width: 480px) {
-   
-    
 
 }
-
 
