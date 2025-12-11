@@ -789,6 +789,46 @@ footer img {
         display: none;
     }
 
+    .caixa-media{
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 80px
+    }
+    .ladoA, .ladoB{
+        width: 75vw;
+        height: 40vh;
+        gap: 15px
+    }
+    .ladoA h2, .ladoB h2{
+        width: 30vw;
+        height: 4vh;
+        font-size: 13px;
+    }
+
+    .ladoA h3, .ladoB h3{
+        width: 55vw;
+        font-size: 25px;
+    }
+
+    .ladoA img, .ladoB img{
+        width: 12vw;
+        margin: 20px;
+    }
+
+     /* =========== CONTATO ============ */
+    .contato h1 {
+        font-size: 35px;
+        /* margin-bottom: 50px; */
+    }
+    .contato h3{
+        width: 60vw;
+        font-size: 20px;
+    }
+    .number{
+        font-size: 25px;
+        width: 35vw;
+        height: 6vh;
+    }
 
 }
 @media(max-width: 480px) {
