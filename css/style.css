@@ -112,7 +112,7 @@ body {
     display: block;
     /* max-width: 100%; */
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     object-fit: cover; 
 
 }
@@ -692,7 +692,7 @@ o cursor passa por cima */
 /* ================= FOOTER ================= */
 footer {
     display: flex;
-    display: 100%;
+    width: 100%;
     /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
@@ -712,7 +712,6 @@ footer div {
     flex-direction: row;
     align-items: center;
     /* margin-left: 30px; */
-    background-color: black;
 }
 
 footer img {
@@ -802,7 +801,6 @@ footer img {
         flex-direction: column;
         justify-content: space-between;
         position: fixed;
-        top: 0;
     }
     .container{
         display: flex;
@@ -820,6 +818,7 @@ footer img {
         padding: 0 1rem;
 
     }
+
     .navbar{
         display: flex;
         align-items: center;
@@ -828,25 +827,26 @@ footer img {
         font-family: sans-serif;
         font-size: 12px
     }
-    
-
     .texto-sobreposto{
-        font-size: 10px;
-        /* margin: -5px 0;  */
+        margin-top: 35px;
     }
+
     .texto-sobreposto h3{
-        font-size: 9px;
+        font-size: 12px;
         /* margin: -5px 5rem; */
+        margin: 0;
     }
     .texto-sobreposto h1{
-        font-size: 15px;
+        font-size: 18px;
+        margin: 0;
         /* margin: 8px 7rem; */
-
-
     }
     .texto-sobreposto h5{
-        width: 160px;
+        width: 170px;
         height: 25px;
+        font-size: 9px;
+        margin-top: 0;
+        padding: 8px;
         /* margin: -69px 6.3rem; */
     }
     /* ========================================== */
@@ -855,6 +855,132 @@ footer img {
     .imgPc{
         display: none;
     }
+    .introducao{
+        padding: 0 8px;
+    }
+    .texto h1{
+        font-size: 18px;
+    }
+    .texto h4{
+        font-size: 15px;
+    }
+    .barra2{
+        margin: 15px 0;
+    }
+
+    /* ===============Recursos=============== */
+
+    .recursos, .recursos2{
+        gap: 3rem;
+    } 
+    .barra3{
+        margin: 15px 0;
+    }
+
+    /* ============================== */
+    /* ========== INFORMAÇÃO ========== */
+    .info h1{
+        font-size: 18px;
+        margin-bottom: 20px;
+        /* margin: 150px 0; */
+    }
+    .info h2{
+        font-size: 15px;
+    }
+
+    /* ============ VIDEOS ============ */
+
+    .video-apresentacao{
+        margin-top: 0;
+    }
+    .titulo{
+        left: 24%;
+    }
+    .titulo h1{
+        font-size: 12px;
+
+    }
+    .titulo h2{
+        font-size: 8px;
+    }
+    /* ================================ */
+    /* ======== DEMONSTRAÇÕES ========= */
+    .demonstracao{
+        padding: 8px;
+    }
+    .demonstracao h1{
+        font-size: 18px;
+    }
+    .demonstracao h2{
+        font-size: 15px;
+    }
+    /* ================================ */
+    /* ============ PREÇOS ============ */
+    .texto-criativo p{
+        font-size: 16px;
+    }
+    .texto-criativo h1{
+        font-size: 12px;
+    }
+    .caixa-media{
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 80px
+    }
+    .ladoA, .ladoB{
+        width: 75vw;
+        height: 40vh;
+        gap: 15px
+    }
+    .ladoA h3, .ladoB h3{
+        width: 55vw;
+        font-size: 15px;
+    }
+    .ladoA h1, .ladoB h1{
+        font-size: 18px;
+    }
+    .ladoA h2, .ladoB h2{
+        width: 30vw;
+        height: 4vh;
+        font-size: 13px;
+    }
+    .ladoA img, .ladoB img{
+        width: 12vw;
+        margin: 20px;
+    }
+    /* ================================ */
+    /* =========== CONTATO ============ */
+    .contato h1 {
+        font-size: 15px;
+        /* margin-bottom: 50px; */
+    }
+    .contato h3{
+        width: 60vw;
+        font-size: 10px;
+    }
+    .number{
+        font-size: 15px;
+        width: 35vw;
+        height: 6vh;
+    }
+    /* ========================================== */
+    /* ================= FOOTER ================= */
+
+    footer{
+        padding: 0;
+    }
+    footer h1{
+        font-size: 11px;
+
+    }
+    footer img{
+        width: 17px;
+    }
+
+
+
+
+
 
 }
 
