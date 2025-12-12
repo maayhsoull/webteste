@@ -1,6 +1,10 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* ANDERSON */
+
+
 /* ================= HEADER ================= */
 body {
     background-color: #F4F2FC;
@@ -98,6 +102,10 @@ body {
 /* ======================================== */
 
 
+/* ANDERSON FIM */
+
+/* COSME INICIO */
+
 /* ================= MAIN ================= */
 
    /* ============== HOME ============== */
@@ -181,6 +189,11 @@ o cursor passa por cima */
 }
 
    /* ================================ */
+
+/*  COSME FIM */
+
+/* MAY INICIO */
+
 
    /* ========== INTRODUÇÃO ========== */
 
@@ -346,6 +359,11 @@ o cursor passa por cima */
 
 /* ================================ */
 
+
+/* MAY FIM */
+
+/* ANDERSON INICIO */
+
 /* ========== INFORMAÇÃO ========== */
 .info {
     /* display: flex; */
@@ -425,6 +443,10 @@ o cursor passa por cima */
 }
 
 /* ================================ */
+
+/* ANDERSON FIM */
+
+/* COSME INICIO */
 
 /* ======== DEMONSTRAÇÔES ========= */
 .demonstracao {
@@ -512,6 +534,10 @@ o cursor passa por cima */
 }
 
 /* ================================ */
+
+/* COSME FIM  */
+
+/* MAY INICIO */
 
 /* ============ PREÇOS ============ */
 .caixa-grande {
@@ -640,6 +666,10 @@ o cursor passa por cima */
 
 /* ================================ */
 
+/* MAY FIM  */
+
+/* ANDERSON INICIO */
+
 /* =========== CONTATO ============ */
 .contato {
     display: flex;
@@ -719,6 +749,10 @@ footer img {
     height: auto;
 }
 /* ========================================== */
+
+/* ANDERSON FIM  */
+
+/* COSME INICIO  */
 
 @media(max-width: 768px) {
     
@@ -831,6 +865,11 @@ footer img {
     }
 
 }
+
+/* COSME FIM */
+
+/* MAY INICIO */
+
 @media(max-width: 480px) {
     /* ================header=================== */
     body{
@@ -1019,7 +1058,7 @@ footer img {
 
 
 
-
+/* MAY FIM */
 
 
 }
